@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Schedule Meeting</string>
+    <string name="meetInfo">Meeting Information</string>
+    <string name="pickDateLabel">Pick a date to get meeting information</string>
+    <string name="pickdate">Pick Date</string>
+    <string name="date_field">Date Field</string>
+    <string name="search">SEARCH</string>
+    <string name="meeting_schedule">Meeting Schedule</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="meeting_agenda">Meeting Agenda</string>
+    <string name="add_meeting_agenda">Add Meeting Agenda</string>
+    <string name="delete_data">Delete</string>
+
+</resources>

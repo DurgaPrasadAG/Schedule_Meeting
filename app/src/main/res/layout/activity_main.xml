@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/meetInfo"
+        android:layout_width="350dp"
+        android:layout_height="46dp"
+        android:text="@string/meetInfo"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <TextView
+        android:id="@+id/pickDateLabel"
+        android:layout_width="378dp"
+        android:layout_height="21dp"
+        android:text="@string/pickDateLabel"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meetInfo"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <EditText
+        android:id="@+id/dateField"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:autofillHints="Enter date"
+        android:ems="10"
+        android:focusableInTouchMode="false"
+        android:hint="@string/pickdate"
+        android:inputType="date"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pickDateLabel"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateField"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabMeetingAgenda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <ImageView
+        android:id="@+id/pickDate"
+        android:layout_width="50dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="447dp"
+        android:background="@color/purple_200"
+        app:layout_constraintBottom_toTopOf="@+id/fabMeetingAgenda"
+        app:layout_constraintStart_toEndOf="@+id/dateField"
+        app:srcCompat="@drawable/ic_baseline_calendar_today_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
